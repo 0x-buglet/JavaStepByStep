@@ -1,7 +1,15 @@
+import java.math.BigDecimal;
+
 public class Calculator {
 	// [ ver 3 ] 뺄셈, 곱셈 기능 추가
 	public long add(int a, int b) {
 		return (long) a + b;
+	}
+
+	public BigDecimal preciseAdd(String a, String b) {
+		BigDecimal num1 = new BigDecimal(a);
+		BigDecimal num2 = new BigDecimal(b);
+		return num1.add(num2);
 	}
 	
 	public long subtract(int a, int b) {
