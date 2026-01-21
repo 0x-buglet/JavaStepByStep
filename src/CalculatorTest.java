@@ -38,18 +38,16 @@ public class CalculatorTest {
 	}
 
 	static void expect(long actual, long expected, String name) {
-		if (actual == expected) {
-			System.out.println("✅ [" + name + "] test success!");
-		} else {
+		if (actual != expected) {
 			throw new AssertionError("❌ Error : " + name + " / expected = " + expected + ", actual = " + actual);
 		}
+		System.out.println("✅ [" + name + "] test success!");
 	}
 
 	static void expect(double actual, double expected, String name) {
-		if (actual == expected) {
-			System.out.println("✅ [" + name + "] test success!");
-		} else {
+		if (actual != expected) {
 			throw new AssertionError("❌ Error : " + name + " / expected = " + expected + ", actual = " + actual);
 		}
+		System.out.println("✅ [" + name + "] test success!");
 	}
 }
