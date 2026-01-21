@@ -40,6 +40,10 @@
 
 ## 📝 Release Notes
 
+### [v1.5.1] - 2026-01-21
+- **Refactor**: Calculator 클래스를 Stateful에서 Stateless 방식으로 개편, 유틸리티 클래스(Utility Class) 구조 확립
+- **Refactor**: 테스트 코드 내 객체 의존성 제거
+
 ### [v1.5.0] - 2026-01-21
 - **Feat**: BigDecimal 도입을 통한 고정밀(High-Precision) 연산 엔진 기틀 마련
 - **Test**: 0.1을 10번 더했을 때 오차 없이 정확히 1.0이 산출되는지 검증하는 정밀도 테스트 수행
