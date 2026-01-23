@@ -1,7 +1,11 @@
 import java.math.BigDecimal;
 
 public class Calculator {
-	// [ ver 4 ] 
+	// [ ver 5 ] stateless 유틸리티 클래스 설계
+	private Calculator() {
+	
+	}
+ 
 	public static long add(int a, int b) {
 		return (long) a + b;
 	}
